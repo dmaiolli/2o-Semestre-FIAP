@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4410A048-600A-C68B-4844-77B9EB3D0495" name="T_WEDO_CLI_END">
+<createdBy>Cleiton Dsd&apos;</createdBy>
+<createdTime>2020-05-27 21:17:46 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="274B73F7-59BA-C10D-D9CC-8C473CA2BB09">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-28 20:57:04 UTC</createdTime>
+<generatorID>47B44CAA-896F-5853-3986-E99441EF9FD7</generatorID>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<referedAttribute>46513B6C-0F67-5388-0F13-9CBB1A5B1691</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_endereco" id="3BF376E3-A8BF-1124-7C49-6804CCB41A9E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-07-30 22:29:50 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_logradouro" id="7B36F5DC-E18C-7FC5-0381-C4850FFBA303">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-07-30 22:33:18 UTC</createdTime>
+<generatorID>AEFC1C44-20BF-7B69-40F0-AB98BC67C170</generatorID>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<referedAttribute>8B6C4851-CDE7-0090-6C66-1B7CC6374D57</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rua" id="F34263B1-4640-7C2F-BA9E-D8D099D87FFF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-07-30 22:44:48 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_ponto_referencia" id="71CF5EB7-2518-B7AC-BEDD-1DBFCBAE5AB2">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-28 21:05:47 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_complemento" id="55DF1741-85F7-BAD8-F2CD-0F2470F97C7B">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-28 21:07:46 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_inicio" id="A91A499C-E73D-00D2-9EBD-695D3A8F5876">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-29 03:51:07 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_termino" id="539549C5-1C63-C876-CDBA-92DBF43F4685">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-07-30 22:42:01 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_ativo" id="62E3D184-1878-723A-62A7-ADCC86B36BF2">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-29 04:00:24 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FABF767A-318C-FC0F-DEDA-5477D2807BD9" name="PK_WEDO_CLIENTE_END">
+<createdBy>aliso</createdBy>
+<createdTime>2020-05-28 19:34:57 UTC</createdTime>
+<ownerDesignName>Delivery_WeDo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>47B44CAA-896F-5853-3986-E99441EF9FD7,3BF376E3-A8BF-1124-7C49-6804CCB41A9E</newElementsIDs>
+<usedAttributes>
+<attributeRef>274B73F7-59BA-C10D-D9CC-8C473CA2BB09</attributeRef>
+<attributeRef>3BF376E3-A8BF-1124-7C49-6804CCB41A9E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
