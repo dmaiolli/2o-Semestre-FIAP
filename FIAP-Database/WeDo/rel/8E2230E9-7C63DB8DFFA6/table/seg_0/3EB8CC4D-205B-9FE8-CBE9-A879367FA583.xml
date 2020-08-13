@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EB8CC4D-205B-9FE8-CBE9-A879367FA583" name="T_WEDO_IMG_PRODUT0">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>953E8A8C-934C-DF82-3FC7-9740EEFFB76A</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_produto" id="40955B15-CFC5-0E64-9E8E-4395E43D773A">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>6057F932-AAFB-D975-B1A8-C85DE099FB5D</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C42CC11-F63B-4E43-745B-E517E05C03BB" referredColumn="6EFFEC91-9A78-1F2D-CEDD-5FFF7514846D"/>
+</associations>
+</Column>
+<Column name="nr_img" id="D4CFD3EA-8548-73B6-ED72-AAE81388D617">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>41218AEC-BCB3-7F4C-8C56-5EB8A63A3315</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ft_img" id="3380767B-A1C1-E5B6-6D56-36F0914B885B">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>5924E655-19C6-59CA-5923-11DEF04E9138</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_cadastro" id="4E2F32F7-E7E4-E29A-D7FD-B1AFA4FB188D">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>53ADD059-88F4-9F46-B35A-9643C2049EC8</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_ativo" id="F9652767-F9C4-E318-EC5F-1342E191D576">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>13F7D67A-3E1F-3CC9-9E87-936083297B5F</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A69E2EE2-B61B-18B4-0ED2-FAB560FF75CE" name="PK_WEDO_IMG_PRODUTO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>344B666B-4C67-8782-4E14-98DC00BFE2BE</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4CFD3EA-8548-73B6-ED72-AAE81388D617"/>
+<colUsage columnID="40955B15-CFC5-0E64-9E8E-4395E43D773A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07ED2AC4-520B-B7FB-D08B-12BF74FCB4B3" name="FK_WEDO_IMG_PROD">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>C66C71A2-115F-1A86-2B93-2C5AD7179C4B</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40955B15-CFC5-0E64-9E8E-4395E43D773A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D78F43F-636B-4BBC-14C5-B5281BB40CDA" name="T_WEDO_CLI_END">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>B251B6ED-306A-5C54-0008-9406CD0B8F48</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="77484996-8FC5-868B-15C2-B0FA67D49630">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E66ECB24-7BA9-5C9F-20FB-88B5E7E84A21</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB172BF0-3B29-1CD6-D8AA-3503720CC815" referredColumn="20DB3D49-A1C5-E363-F30A-2B7861DE1818"/>
+</associations>
+</Column>
+<Column name="nr_endereco" id="5BB1BD48-17B0-738B-F299-2B5F43066E8C">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>71B4CAA1-1B4B-981B-5BF1-2C7485E5F1A0</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_logradouro" id="86C5A2F9-14F3-4E91-600D-E18C997579FC">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>81AEFCDC-6E84-7004-71CB-42F54813B6B1</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4153BF90-88CB-1424-DC2D-4151C4CFFECA" referredColumn="D9FFECC8-9C4C-D7C2-A81D-00B5496B7CB2"/>
+</associations>
+</Column>
+<Column name="nr_rua" id="077B2A27-E28E-A51A-AE9D-D9B7FE77AD66">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>945684AC-8481-359F-C00C-B186E179766D</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_ponto_referencia" id="7BC5E1CE-EB25-F2CF-0EE1-2024AEEE3FCF">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>9E3616F5-68F5-B05E-AB6D-494E5D8A5A3D</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_complemento" id="A7AC84F7-CC23-9DD7-7BB5-E8C29039A771">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>6D525F19-84A7-4ECF-1340-E89E5E71DE2A</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_inicio" id="33395DC8-49C5-6811-72F9-610E78B42025">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E330E4FB-F483-180C-AA9A-F340A46FEC06</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_termino" id="A91BB9A9-E742-6170-50DA-C1B7423D6957">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E14AFF2E-E047-9AE6-6383-A638B95511FF</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_ativo" id="458D0903-B4B7-78EA-4290-416220FE5ABD">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>2DCA1154-4EE7-5509-9D67-374950807A0C</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1626449C-B28D-B587-38F4-1AC341BA78BC" name="PK_WEDO_CLIENTE_END">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>0B2C92D5-7A5C-EB9A-CA76-5B7053E0CC7F</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77484996-8FC5-868B-15C2-B0FA67D49630"/>
+<colUsage columnID="5BB1BD48-17B0-738B-F299-2B5F43066E8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF31AC7E-9590-2612-8D86-4BC858393C0C" name="FK_WEDO_CLIENTE_END">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>2DA7D342-0950-F555-7F71-96C4B15E04B7</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77484996-8FC5-868B-15C2-B0FA67D49630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5B04242-9CAD-687A-E4D3-0CD15DB9C3F5" name="FK_WEDO_END_CORREIO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>D92BE37D-F7DC-D9F3-5AFF-1CDBCFA09F6E</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86C5A2F9-14F3-4E91-600D-E18C997579FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

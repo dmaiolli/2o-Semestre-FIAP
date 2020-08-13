@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB710087-2260-B735-B1C4-8A51751CED74" name="T_WEDO_TEL_CLIENTE">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>085BBCFC-F301-4541-5AAA-54C1073BDCE1</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_telefone" id="C7573B94-B11E-F194-F64B-26106919A5F8">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>FCC2F5D6-2CD2-3B84-4A88-95199FB0F14B</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cliente" id="93A8A7A8-1F3F-E2D9-72B4-8C1238E2154D">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>298D9A70-0419-775F-73C6-C18BF86B72CA</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4A666F6-56AA-7A00-D377-FBA583E8A1D6" referredColumn="20DB3D49-A1C5-E363-F30A-2B7861DE1818"/>
+</associations>
+</Column>
+<Column name="cd_ddd" id="D6DAFD8E-B361-6FA8-C968-9A42A5B0918A">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>DD2C1F9F-7949-8025-2310-5E4E2222FA49</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="8863B069-B241-3083-4E3D-097C2D47B6D8">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>A6C9941A-CED6-EDB9-0BC5-688097A03B8C</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_telefone" id="CD962A68-7731-CB1F-29CA-C719043621E9">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>89EFE711-54DB-19EC-70E9-7D87FDAA80ED</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B807144-8B17-8A22-FABE-066AE4A4805E" name="PK_WEDO_CLI_TEL">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>BC232655-9B70-B01B-6274-4EA8C43A38DB</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7573B94-B11E-F194-F64B-26106919A5F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B47BBAB-AD70-77C5-5092-8B4D30FCFA91" name="FK_WEDO_CLIENTE_TEL">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>C1E6EB23-C4A5-ABDD-1B73-437F09D657D2</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93A8A7A8-1F3F-E2D9-72B4-8C1238E2154D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

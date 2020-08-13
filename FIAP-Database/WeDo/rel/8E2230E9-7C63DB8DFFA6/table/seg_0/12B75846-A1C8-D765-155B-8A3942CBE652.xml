@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12B75846-A1C8-D765-155B-8A3942CBE652" name="T_PES_JURIDICA">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>69F80F83-FA64-A246-6D5C-0A5157403FAB</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="BC2AB4AC-A90E-119B-038B-296EDDC7BF82">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>02264F52-5477-4FB8-EAE0-B07B666926FF</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9F9B55C-04EF-F557-A5C3-B600F4219757" referredColumn="20DB3D49-A1C5-E363-F30A-2B7861DE1818"/>
+</associations>
+</Column>
+<Column name="nr_cnpj" id="B82BBE1D-2D26-A5BE-EDD9-C32333838ECD">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>CB607284-B8B4-F407-6F10-57B39C846D0C</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_fantasia" id="81BB0F87-3DAB-3918-E995-3C87A24768CA">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>022DD7E8-A723-AC38-9E39-FE27A337B1B2</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_insc_estadual" id="D00FF3A6-A43B-C6B0-B71A-07E795950EC8">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>2F870FB8-CC46-238E-C0BC-6D7E8DD65E87</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_fundacao" id="6654A3A9-A7A5-07F8-8C6D-1EC08063D638">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>6855910A-FBFC-539C-9C19-0F6CAF4608E6</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C90AD98C-8EDC-1AC3-D8FC-E5A005998682" name="PK_WEDO_CLI_JURIDICO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>60C4B712-0E30-2650-FCC2-EA556F656C33</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC2AB4AC-A90E-119B-038B-296EDDC7BF82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E1B4BF3-EC06-B07A-68C2-D1AB24FBB0F7" name="UK_WEDO_NR_CPNJ">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E16C49B2-DD06-C6A4-2E2E-4AD091101719</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B82BBE1D-2D26-A5BE-EDD9-C32333838ECD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CBCDBB8-8E66-D3CB-73DD-81245596F7A1" name="FK_WEDO_CLI_JURIDICO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>C1837D4B-21E7-AF22-E4C9-ADD82831C361</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC2AB4AC-A90E-119B-038B-296EDDC7BF82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

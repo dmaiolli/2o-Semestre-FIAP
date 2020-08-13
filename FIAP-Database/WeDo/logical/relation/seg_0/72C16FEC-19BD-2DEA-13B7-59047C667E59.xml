@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_WEDO_CLI_FISICO" directorySegmentName="seg_0" id="72C16FEC-19BD-2DEA-13B7-59047C667E59">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 01:53:30 UTC</createdTime>
+<ownerDesignName>WeDo</ownerDesignName>
+<engineerTo>
+<item key="8E2230E9-276B-5582-5400-7C63DB8DFFA6" value="true"/>
+</engineerTo>
+<sourcePk>9A4ECC9A-1600-DF40-E521-C0B83E468375</sourcePk>
+<arc>2EB9D0D0-4729-FDB6-44FE-902F6A968CFE</arc>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6CEEECF2-43F7-F46B-5BD1-5DB7F5F34088</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>710E3F70-8A45-BD8F-FDC8-BBC712A2C070</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

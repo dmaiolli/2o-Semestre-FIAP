@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6359A10F-C9B2-B485-34CE-E21B9EB8C485" name="T_PES_FISICA">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>710E3F70-8A45-BD8F-FDC8-BBC712A2C070</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="E106B405-F39E-2612-33D4-71EA2265930D">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E0DC79DC-6AF2-9BD8-536B-94EFEC024FE2</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B721FE7F-38A5-33C2-CEC3-E0DFB86BE652" referredColumn="20DB3D49-A1C5-E363-F30A-2B7861DE1818"/>
+</associations>
+</Column>
+<Column name="nr_cpf" id="B9319A07-DAA0-F589-8A07-0DEAC1AB4557">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E742DC3F-D138-E248-F706-743591666951</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_rg" id="5AD8A232-5F51-B852-F5CB-5C5C7405BFE9">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>E79CF28F-9DFB-ACB7-4A71-4B54C8CF5B25</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="6F8FC0CC-952B-1F5F-7462-3EDC423EB498">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>13D64866-53C8-F42A-C9E0-D76AFDA80863</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sexo" id="545499BF-4969-16C6-3E4D-2EFD173E90BF">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>C4667557-778C-8012-15EC-FF0E554EBB7D</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_est_civil" id="A94F4D8A-AFF6-B24C-543A-3312939F2BE1">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>08CA3AC0-1AB0-2ACA-D030-110E33F59600</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_escolaridade" id="CD53E476-9F06-FBEF-F14B-6A3CA1D34EA0">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>47380B03-27BF-4D90-9F05-9357DAA89151</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1431F4D-5F0A-76A5-8FF9-CD682F9B2F14" name="PK_WEDO_CLI_FISICO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>626C242D-A1FA-6B55-5BCE-5E946A9E291F</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E106B405-F39E-2612-33D4-71EA2265930D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4668FE5-768E-25C9-5357-0AD2B8E47CE0" name="UK_WEDO_NR_CPF">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>319E25B7-1297-0056-8D88-A6AFC8C9B0E9</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9319A07-DAA0-F589-8A07-0DEAC1AB4557"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77542CE7-39AC-7EDC-814F-0D550222B3D0" name="UK_WEDO_NR_RG">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:26:35 UTC</createdTime>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AD8A232-5F51-B852-F5CB-5C5C7405BFE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A74FE601-8C61-E672-2204-77A6338FA5ED" name="FK_WEDO_CLI_FISICO">
+<createdBy>denys</createdBy>
+<createdTime>2020-08-13 02:23:49 UTC</createdTime>
+<generatorID>72C16FEC-19BD-2DEA-13B7-59047C667E59</generatorID>
+<ownerDesignName>WeDo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E106B405-F39E-2612-33D4-71EA2265930D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
