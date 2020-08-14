@@ -1,31 +1,16 @@
 package ArrayList.Exercicios;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class concessionaria {
-	
-	List<automovel> automoveis = new ArrayList<>();
 
-	public void adicionaVeiculos(automovel automoveis) {
+	public static void main(String[] args) {
 
-	}
-	
-	public void vendaVeiculo(automovel automoveis) {
+		List<Integer> automovel = new ArrayList<Integer>();
 		
-	}
-
-	public void consultaEstoqueVeiculos(List<automovel> automoveis) {
 		
+		public void adicionaCarro(Automovel automoveis) {
+			
+		}
 	}
-	
-	public double somaEstoque() {
-		return 0.88;
-	}
-	
-	public boolean consultaVeiculo(automovel automoveis) {
-		return true;
-	}
-	
-	
 }
