@@ -1,6 +1,7 @@
 package ArrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -95,6 +96,22 @@ public class ListTest {
 		numeros.forEach(System.out::println);
 		System.out.println("--------------------");
 
+		// Method sort
+		List<String> nomes = Arrays.asList("Denys", "Domingas", "Dilson");
+		nomes.forEach(name -> System.out.println(name));
+		
+		Collections.sort(nomes);
+		System.out.println(nomes);
+		
+		ArrayList<Integer> sort = new ArrayList<Integer>();
+		sort.add(1);
+		sort.add(3);
+		sort.add(5);
+		sort.add(2);
+		sort.add(1);
+		
+		Collections.sort(sort);
+		System.out.println(sort);
 	}
 
 }
