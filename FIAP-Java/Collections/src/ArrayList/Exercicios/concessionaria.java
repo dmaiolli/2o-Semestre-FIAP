@@ -4,7 +4,11 @@ import java.util.*;
 
 public class Concessionaria {
 
-	List<Automovel> automoveis = new ArrayList<Automovel>();
+	List<Automovel> automoveis;
+	
+	public Concessionaria() {
+		this.automoveis = new ArrayList<>();
+	}
 
 	public List<Automovel> getAutomoveis() {
 		return automoveis;
@@ -15,29 +19,33 @@ public class Concessionaria {
 	}
 
 	public void vendaVeiculo(Automovel automovel) {
-		automoveis.remove(automovel);
+		this.automoveis.remove(automovel);
 	}
 
 	public List<Automovel> consultaEstoqueVeiculo() {
 		automoveis.sort(
 				Comparator.comparing(Automovel::getPreco)
+				
 				);
-		return getAutomoveis();
+		return this.automoveis;
 	}
 
 	public double somaEstoque() {
-		int somaTotal = 0;
-		for (Automovel automovel : this.getAutomoveis()) {
-			somaTotal += automovel.getPreco();
-		}
-		return somaTotal;
+		return automoveis.stream().mapToDouble(veiculo -> veiculo.getPreco()).sum();
+		
+//		int somaTotal = 0;
+//		for (Automovel automovel : this.getAutomoveis()) {
+//			somaTotal += automovel.getPreco();
+//		}
+//		return somaTotal;
 	}
 
 	public boolean consultaVeiculo(Automovel automovel) {
-		if (automoveis.contains(automovel)) {
-			return true;
-		}
-		return false;
+		return automoveis.stream().filter(automovel::equals).count() == 1;
+//		if (automoveis.contains(automovel)) {
+//			return true;
+//		}
+//		return false;
 	}
 
 	public String controleEstoque(Automovel automovel) {
@@ -49,9 +57,9 @@ public class Concessionaria {
 		}
 		
 		if(ocorrencias == 1) {
-			return "Temos " + ocorrencias + " carro do modelo " + automovel.getModelo() + " " + automovel.getMarca() + " no valor de " + automovel.getPreco();
+			return String.format("Temos %d ocorrência do carro %s %s no valor de %.2f", ocorrencias, automovel.getMarca(), automovel.getModelo(), automovel.getPreco());
 		}
 		
-		return "Temos " + ocorrencias + " carros do modelo " + automovel.getModelo() + " " + automovel.getMarca() + " no valor de " + automovel.getPreco();
+		return String.format("Temos %d ocorrências do carro %s %s no valor de %.2f", ocorrencias, automovel.getMarca(), automovel.getModelo(), automovel.getPreco());
 	}
 }

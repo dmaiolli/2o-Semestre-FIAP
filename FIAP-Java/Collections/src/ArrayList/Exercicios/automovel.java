@@ -1,10 +1,12 @@
 package ArrayList.Exercicios;
 
+import java.util.Objects;
+
 public class Automovel {
 
 	private String Marca;
 	private String Modelo;
-	private double Preco;
+	private Double Preco;
 	
 	public Automovel(String marca, String modelo, double preco) {
 		Marca = marca;
@@ -26,7 +28,20 @@ public class Automovel {
 	
 	@Override
 	public String toString() {
-		return "O carro da marca: " + this.Marca + ", modelo: " + this.Modelo + ", avaliado no valor de: " + this.getPreco() + "\n";
+		return String.format("Automovel{marca = %s, modelo = %s, preço = %.2fR$}", Marca, Modelo, Preco);
 	}
 	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Automovel) {
+			Automovel auto = (Automovel) o;
+			return this.Marca.equals(auto.getMarca()) && this.Modelo.equals(auto.getModelo()) && this.Preco.equals(auto.getPreco());
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(Marca, Modelo, Preco);
+	}
 }
