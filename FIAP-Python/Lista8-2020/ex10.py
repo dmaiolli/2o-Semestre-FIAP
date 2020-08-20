@@ -22,7 +22,7 @@ def intercala(lA, lB):
     return resp
 
 x = [2,6,8,9,13,15,23]
-y = [0,1,10,12]
+y = [0,1,10,12,14,15,16,17]
 
 resultado = intercala(x, y)
 print(resultado)
