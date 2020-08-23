@@ -8,6 +8,10 @@ public class Aluno {
 	private Double nota1;
 	private Double nota2;
 	
+	public Aluno(Integer rm) {
+		this.rm = rm;
+	}
+	
 	public Aluno(Integer rm, String nome) {
 		this.rm = rm;
 		this.nome = nome;
@@ -64,7 +68,7 @@ public class Aluno {
 	
 	@Override
 	public String toString() {
-		return String.format("Aluno: { %s, %s, %s, %s, %s, %s }", 
+		return String.format("Aluno: { ID: %s, RM: %s, NOME: %s, ATIVO? %s, NOTA 1: %s, NOTA 2: %s }", 
 				id, rm, nome, ativo, nota1, nota2);
 	}
 	

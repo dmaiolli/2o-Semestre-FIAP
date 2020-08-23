@@ -27,13 +27,13 @@ public class Principal {
 						consultarTurma(scan);
 						break;
 					case 3:
-						consultaAtivos();
+						consultaAtivos(scan);
 						break;
 					case 4:
-						ativaDesativaAluno();
+						ativaDesativaAluno(scan);
 						break;
 					case 5:
-						excluiAluno();
+						excluiAluno(scan);
 						break;
 				}
 
@@ -42,21 +42,6 @@ public class Principal {
 			
 			System.out.println("Sistema finalizado com sucesso");
 		}
-	}
-
-	private static void excluiAluno() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void ativaDesativaAluno() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void consultaAtivos() {
-		// TODO Auto-generated method stub
-		
 	}
 
 	private static void menu() {
@@ -71,6 +56,81 @@ public class Principal {
 		System.out.println("| 5 - Excluir aluno         |");
 		System.out.println("| 0 - Sair do sistema       |");
 		System.out.println("|---------------------------|");
+	}
+	
+	private static void excluiAluno(Scanner scan) {
+		System.out.println("|--------Exclui aluno-------|");
+		System.out.print("| Digite o RM do aluno:     |");
+		int rm = scan.nextInt();
+		System.out.println("| Excluindo aluno...        |");
+		new AlunoDB().excluiAluno(rm);
+		System.out.println("|-------Aluno excluido------|");
+
+	}
+
+	private static void ativaDesativaAluno(Scanner scan) {
+		System.out.println("|----------------------------|");
+		System.out.println("|        ESCOLA D.O.S        |");
+		System.out.println("|                            |");
+		System.out.println("| Digite a opção desejada:   |");
+		System.out.println("| 1 - Desativar aluno        |");
+		System.out.println("| 2 - Ativar aluno           |");
+		System.out.println("| 0 - Voltar ao menu         |");
+		System.out.println("|----------------------------|");
+		
+		System.out.print("> ");
+		int opcao = scan.nextInt();
+		scan.nextLine();
+		
+		switch(opcao) {
+			case 1:
+				desativaAluno(scan);
+				break;
+			case 2:
+				ativaAluno(scan);
+				break;
+			case 3:
+				menu();
+				break;
+				
+		}
+		
+	}
+
+	private static void ativaAluno(Scanner scan) {
+		System.out.println("|-------Ativa aluno-------|");
+		System.out.print("| Digite o RM do aluno:   |");
+		int rm = scan.nextInt();
+		scan.nextLine();
+		Aluno aluno = new Aluno(rm);
+		aluno.setAtivo(true);
+		
+		System.out.println("| Ativando aluno...        |");
+		new AlunoDB().salvaUpdate(rm, 1);
+		System.out.println("|-------Aluno Ativado------|");
+		
+	}
+
+	private static void desativaAluno(Scanner scan) {
+		System.out.println("|-------Desativa aluno-------|");
+		System.out.print("| Digite o RM do aluno:      |");
+		int rm = scan.nextInt();
+		scan.nextLine();
+		Aluno aluno = new Aluno(rm);
+		aluno.setAtivo(false);
+		
+		System.out.println("| Desativando aluno...     |");
+		new AlunoDB().salvaUpdate(rm, 0);;
+		System.out.println("|-----Aluno desativado-----|");
+		
+	}
+
+	private static void consultaAtivos(Scanner scan) {
+		System.out.println("|----Consulta aluno ativo----|");
+		List<Aluno> alunosAtivos = new AlunoDB().consultaAtivos();
+		System.out.println("| Listando os alunos...     |");
+		alunosAtivos.forEach(System.out::println);
+		System.out.println("|------Fim da consulta------|");
 	}
 
 	private static void cadastrarAluno(Scanner scan) {
@@ -106,7 +166,7 @@ public class Principal {
 		List<Aluno> alunos = new AlunoDB().consultaTodos();
 		System.out.println("| Listando os alunos...     |");
 		alunos.forEach(System.out::println);
-		System.out.println("|---------------------------|");
+		System.out.println("|------Fim da consulta------|");
 	}
 
 }

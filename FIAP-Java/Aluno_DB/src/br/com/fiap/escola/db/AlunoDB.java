@@ -28,12 +28,24 @@ public class AlunoDB {
 		}
 	}
 
+	public void salvaUpdate(int rm, int ativo) {
+		try {
+			String sql = String.format("update tb_aluno set ativo = %d where rm like  '%s'", ativo, rm);
+
+			Statement stmt = this.conn.createStatement();
+			stmt.executeUpdate(sql);
+			this.desconecta(this.conn);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void salva(Aluno aluno) {
 		try {
 
 			String sql = String.format(
 					"insert into tb_aluno(id, rm, nome, ativo, nota1, nota2) "
-					+ "values(sq_aluno.nextval, %s, '%s', %s, %s, %s)",
+							+ "values(sq_aluno.nextval, %s, '%s', %s, %s, %s)",
 					aluno.getRm(), aluno.getNome(), aluno.getAtivo() ? 1 : 0, aluno.getNota1(), aluno.getNota2());
 
 			Statement stmt = this.conn.createStatement();
@@ -51,21 +63,47 @@ public class AlunoDB {
 			conn.close();
 	}
 
-	public List<Aluno> consultaTodos() {
-		try {
-			List<Aluno> alunos = new ArrayList<Aluno>();
 
+	public List<Aluno> consultaAtivos() {
+		try {
+			List<Aluno> alunosAtivos = new ArrayList<Aluno>();
 			Statement stmt = this.conn.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from tb_aluno");
-			
-			while(rs.next()) {
+			String sql = "select * from tb_aluno where ativo = 1";
+			ResultSet rs = stmt.executeQuery(sql);
+
+			while (rs.next()) {
 				Integer id = rs.getInt("id");
 				Integer rm = rs.getInt("rm");
 				String nome = rs.getString("nome");
 				Boolean ativo = rs.getBoolean("ativo");
 				Double nota1 = rs.getDouble("nota1");
 				Double nota2 = rs.getDouble("nota2");
-				
+
+				alunosAtivos.add(new Aluno(id, rm, nome, ativo, nota1, nota2));
+			}
+			this.desconecta(this.conn);
+			return alunosAtivos;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public List<Aluno> consultaTodos() {
+		try {
+			List<Aluno> alunos = new ArrayList<Aluno>();
+
+			Statement stmt = this.conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select * from tb_aluno");
+
+			while (rs.next()) {
+				Integer id = rs.getInt("id");
+				Integer rm = rs.getInt("rm");
+				String nome = rs.getString("nome");
+				Boolean ativo = rs.getBoolean("ativo");
+				Double nota1 = rs.getDouble("nota1");
+				Double nota2 = rs.getDouble("nota2");
+
 				alunos.add(new Aluno(id, rm, nome, ativo, nota1, nota2));
 			}
 
@@ -76,5 +114,18 @@ public class AlunoDB {
 			return null;
 		}
 	}
-	}
 
+
+	public void excluiAluno(int rm) {
+		try {
+			boolean existeAluno = consultaTodos().stream().filter(aluno -> );
+			Statement stmt = this.conn.createStatement();
+			String sql = String.format("delete from tb_aluno where rm = %d", rm);
+			stmt.executeUpdate(sql);
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

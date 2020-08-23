@@ -11,7 +11,7 @@ public class StreamAPI {
 
 	public static void main(String[] args) {
 		List<Automovel> automoveis = getAutomoveis();
-		// Declarative programming -> Strem API -> a partir Java 8
+		// Declarative programming -> Stream API -> a partir Java 8
 		// Filter
 		List<Automovel> filtrado = automoveis.stream()
 				.filter(automovel -> automovel.getPreco() < 15000.0)
