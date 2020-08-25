@@ -118,14 +118,12 @@ public class AlunoDB {
 
 	public void excluiAluno(int rm) {
 		try {
-			boolean existeAluno = consultaTodos().stream().filter(aluno -> );
 			Statement stmt = this.conn.createStatement();
 			String sql = String.format("delete from tb_aluno where rm = %d", rm);
 			stmt.executeUpdate(sql);
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
-		
 		
 	}
 }
