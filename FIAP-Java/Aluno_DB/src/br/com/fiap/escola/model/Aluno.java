@@ -17,8 +17,7 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	public Aluno(Integer id, Integer rm, String nome, 
-			Boolean ativo, Double nota1, Double nota2) {
+	public Aluno(Integer id, Integer rm, String nome, Boolean ativo, Double nota1, Double nota2) {
 		this(rm, nome);
 		this.id = id;
 		this.ativo = ativo;
