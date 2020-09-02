@@ -19,9 +19,9 @@ btnGravar.addEventListener('click', event => {
             nome: personagemDigitado.nome.value,
             velocidade: personagemDigitado.velocidade.value,
             agilidade: personagemDigitado.agilidade.value,
-            forca: personagemDigitado.forca.value,
-
+            forca: personagemDigitado.forca.value
         }
+        return personagem;
     }
 
 

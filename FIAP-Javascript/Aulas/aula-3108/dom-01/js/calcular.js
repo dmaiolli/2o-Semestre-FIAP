@@ -24,7 +24,7 @@ function CalcularXP() {
         let xpFinal = (velocidadeTD + agilidadeTD + forcaTD);
 
         // escrever na tabela
-        herois[i].querySelector('.xp-final').textContent = xpFinal;
+        // herois[i].querySelector('.xp-final').textContent = xpFinal;
 
         if (xpFinal < 250) {
             //forma não legal....pois para formatar preciso de CSS - local correto
@@ -36,3 +36,6 @@ function CalcularXP() {
         }
     }
 }
+
+// Função que calcula o XP - diferenca é que qq um pode usar
+function
