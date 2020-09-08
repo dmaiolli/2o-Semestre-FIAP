@@ -37,7 +37,7 @@ def vencedor(time1, time2):
     return time1, time2
 
 def imprime(listaTimes):
-    print('Estão participando os times: ')
+    print('Tabela: ')
     for times in listaTimes:
         print(times)
 
