@@ -1,3 +1,5 @@
+import criaMatriz
+
 def soma(matriz):
     somaPos = 0
     somaNeg = 0
@@ -9,7 +11,14 @@ def soma(matriz):
         for j in range(col):
             if matriz[i][j] > 0:
                 somaPos += matriz[i][j]
+
+                for linha in matriz:
+                    print(linha)
             else:
                 somaNeg += matriz[i][j]
     
-    return(somaPos, somaNeg)
+    print(somaPos, somaNeg)
+
+mat = criaMatriz.criaMatriz()
+
+soma(mat)
