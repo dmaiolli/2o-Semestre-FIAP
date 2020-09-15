@@ -1,9 +1,9 @@
 // pegar o botão calcular
-const btnCalcular = document.querySelector('#calcular');
-console.log(btnCalcular);
+//const btnCalcular = document.querySelector('#calcular');
+//console.log(btnCalcular);
 
 // adicionar ao botão um escutador de Eventos
-btnCalcular.addEventListener('click', CalcularXP);
+//btnCalcular.addEventListener('click', CalcularXP);
 
 function CalcularXP() {
 
@@ -20,11 +20,13 @@ function CalcularXP() {
         let agilidadeTD = Number(herois[i].querySelector('.agilidade').textContent);
         let forcaTD = Number(herois[i].querySelector('.forca').textContent);
 
+        //let xpFinal = (velocidadeTD + agilidadeTD + forcaTD);
+        
         // calculamos o XPFinal
-        let xpFinal = (velocidadeTD + agilidadeTD + forcaTD);
+        let xpFinal = xpJogador(velocidadeTD, agilidadeTD, forcaTD);
 
         // escrever na tabela
-        // herois[i].querySelector('.xp-final').textContent = xpFinal;
+        herois[i].querySelector('.xp-final').textContent = xpFinal;
 
         if (xpFinal < 250) {
             //forma não legal....pois para formatar preciso de CSS - local correto
@@ -37,5 +39,10 @@ function CalcularXP() {
     }
 }
 
-// Função que calcula o XP - diferenca é que qq um pode usar
-function
+// função que calcula o XP - diferença é que qq  um vai poder usar
+
+function xpJogador(velocidade, agilidade, forca){
+   return (Number(velocidade) + Number(agilidade) + Number(forca));
+}
+
+CalcularXP();
