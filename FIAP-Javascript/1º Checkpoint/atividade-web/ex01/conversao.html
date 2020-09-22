@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Conversor de Moeda</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container container-dois">
+    <div class="converter">
+      <form id="dados" action="" method="post">
+        <h3>Entre com valor em Reais</h3>
+        <p>
+          <input type="text" id="valor-real" placeholder="Digite o valor a ser convertido">
+        </p>
+
+        <h3>Selecione a moeda</h3>
+        <p>
+          <select class="" id="moeda">
+            <option value="0">Selecione</option>
+            <option value="1">Dólar</option>
+            <option value="2">Euro</option>
+            <option value="3">BitCoin</option>
+          </select>
+        </p>
+
+        <p>
+          <button type="submit" name="button" id="btn-calcular">CONVERTER</button>
+        </p>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="container container-dois">
+
+      <div class="box" id="resultados">
+        <h2 id="moeda-escolhida"></h2>
+        <p id="valor-conversao"></p>
+      </div>
+
+  </div>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
