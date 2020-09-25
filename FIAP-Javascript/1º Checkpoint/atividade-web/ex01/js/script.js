@@ -16,7 +16,7 @@ btnCalcula.addEventListener('click', event => {
 
   const valorCalculado = calculaValor(valorReal, moeda)
 
-  resultadoValor.append(valorCalculado.dolar)
+  resultadoValor.append(valorCalculado)
   moedaEscolhida.append(nomeMoeda)
 })
 
@@ -27,8 +27,7 @@ function calculaValor(valor, moeda){
 
   if(moeda == 1){
     const soma = valor * dolar
-    const nome = dolar
-    return {soma, dolar}
+    return soma
   }
   if(moeda == 2){
     const soma = valor * euro
@@ -43,11 +42,11 @@ function calculaValor(valor, moeda){
 function validaDados(valor, moeda) {
   if (isNaN(valor) | valor < 0 | valor.length === 0) {
     alert('Digite um valor válido')
-    return
+    return 0
   }
 
   if (moeda == 0) {
     alert('Escolha uma opção')
-    return
+    return 0
   }
 }
