@@ -1,2 +1,0 @@
-#--- Arquivo escrito com Java 15 ---#
-- Hello Arquivo! Sem close agora -
