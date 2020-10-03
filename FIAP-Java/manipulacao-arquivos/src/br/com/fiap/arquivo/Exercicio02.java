@@ -8,32 +8,28 @@ import java.util.Scanner;
 
 public class Exercicio02 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        try (Scanner scan = new Scanner(System.in)) {
+            System.out.print("Informe a quantidade de linhas: > ");
+            int linhas = scan.nextInt();
+            System.out.print("Informe a quantidade de colunas: > ");
+            int colunas = scan.nextInt();
 
-		try (Scanner scanner = new Scanner(System.in)) {
-			System.out.println("Informe a quantidade de linhas: >");
-			int linhas = scanner.nextInt();
-			
-			System.out.println("Informe a quantidade de linhas: >");
-			int colunas = scanner.nextInt();
-			
-			FileWriter fileWriter = new FileWriter("matriz.txt");
-			PrintWriter writer = new PrintWriter(fileWriter);
-			
-			for(int i = 0; i < linhas; i++) {
-				StringBuilder sb = new StringBuilder();
-				for(int j = 0; j < colunas; j++) {
-					sb.append(String.format("%d\t", new Random().nextInt(1000)));
-				}
-				writer.println(sb.toString());
-			}
-			
-			
-			writer.close();
-			fileWriter.close();
-		} catch (IOException e) {
-			e.getMessage();
-		}
+            FileWriter fileWriter = new FileWriter("matriz.txt");
+            PrintWriter writer = new PrintWriter(fileWriter);
 
-	}
+            for(int i = 0; i < linhas; i++) {
+                StringBuilder sb = new StringBuilder();
+                for(int j = 0; j < colunas; j++) {
+                    sb.append(String.format("%d\t", new Random().nextInt(1000)));
+                }
+                writer.println(sb.toString());
+            }
+
+            writer.close();
+            fileWriter.close();
+        }catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
