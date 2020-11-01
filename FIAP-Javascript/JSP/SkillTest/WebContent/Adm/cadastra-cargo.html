@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/style.css">
+<title>Cadastro de cargo</title>
+</head>
+
+<body>
+
+	<main>
+		<nav class="navbar">
+            <ul class="cima">
+                <img src="./images/foto.png" alt="perfil">
+            </ul>
+
+            <ul class="meio">
+                <li><a href="./index.html"><img src="./images/lista-funcionarios.png" alt="Lista de funcionários"></a>
+                </li>
+                <li><a href="./cadastra-cargo.html"><img src="./images/add-cargo.png" alt="Adiciona cargo"></a></li>
+                <li><a href="./cadastra-funcionario.html"><img src="./images/add-funcionario.png" alt="Adiciona funcionário"></a>
+                <li><a href="./cadastra-gerente.html"><img src="./images/user-adm.png" alt="Adiciona funcionário"></a>
+                </li>
+            </ul>
+
+            <ul class="fim"><a href="./ajuda.html"><img src="./images/help.png" alt="Ajuda"></a></ul>
+        </nav>
+
+		<div class="content">
+			<header>
+				<input type="search" id="busca" placeholder="Busca">
+			</header>
+			<form action="../CadastraCargo" method="post">
+				<div class="container">
+
+					<div class="cadastro-cargo">
+
+						<h2>CADASTRO DE CARGO</h2>
+
+						<fieldset>
+							<input type="text" name="cargo" placeholder="Digite o nome do cargo">
+						</fieldset>
+						<fieldset>
+							<select name="gerente" id="">
+								<option value="">Selecione o gerente responsável</option>
+								<option value="Thomas-Aquino">Thomas Aquino</option>
+								<option value="Jhonata-Borges">Jhonata Borges</option>
+								<option value="Thomas-Aquino">Thomas Borges</option>
+							</select>
+						</fieldset>
+					</div>
+
+					<div class="cadastro habilidades">
+						<h2>HABILIDADES</h2>
+
+						<fieldset>
+							<input type="text" name="habilidade1" placeholder="Habilidade"> <input
+								type="number" name="pesoHabilidade1" placeholder="Peso">
+						</fieldset>
+						<fieldset>
+							<input type="text" name="habilidade2" placeholder="Habilidade"> <input
+								type="number" name="pesoHabilidade2" placeholder="Peso">
+						</fieldset>
+						<fieldset>
+							<input type="text" name="habilidade3" placeholder="Habilidade"> <input
+								type="number" name="pesoHabilidade3" placeholder="Peso">
+						</fieldset>
+					</div>
+					<!-- <a id="add-habilidades">+</a> -->
+
+					<div class="cadastro perguntas">
+						<h2>PERGUNTAS</h2>
+
+						<fieldset>
+							<input type="text" name="pergunta1" placeholder="Perguntas"> <input
+								type="number" name="pesoPergunta1" placeholder="Peso">
+						</fieldset>
+						<fieldset>
+							<input type="text" name="pergunta2" placeholder="Perguntas"> <input
+								type="number" name="pesoPergunta2" placeholder="Peso">
+						</fieldset>
+						<fieldset>
+							<input type="text" name="pergunta3" placeholder="Perguntas"> <input
+								type="number" name="pesoPergunta3" placeholder="Peso">
+						</fieldset>
+					</div>
+					<!-- <a id="add-pergunta">+</a> -->
+
+					<div class="bt-salva">
+						<input type="submit" value="Salvar">
+					</div>
+
+				</div>
+			</form>
+
+		</div>
+	</main>
+
+	<script src="./scripts/script.js"></script>
+</body>
+
+</html>
